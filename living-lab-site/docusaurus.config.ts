@@ -123,12 +123,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/gillamga/VCU-Living-Lab',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Virginia Commonwealth University, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.gruvboxMaterialLight,

@@ -4,6 +4,17 @@
  * work well for content-centric websites.
  */
 
+/* Prevent overscroll/bounce effect */
+html, body {
+  overscroll-behavior: none;
+  overscroll-behavior-y: none;
+  height: 100%;
+}
+
+#__docusaurus {
+  overscroll-behavior: none;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #ffffff;

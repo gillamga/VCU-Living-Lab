@@ -36,9 +36,43 @@
   color: #000;
 }
 
+[data-theme='light'] .container h1,
+[data-theme='light'] .container > p {
+  text-shadow: 
+    0 0 4px rgba(255, 255, 255, 0.9),
+    0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 12px rgba(255, 255, 255, 0.7),
+    0 0 16px rgba(255, 255, 255, 0.6),
+    0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+[data-theme='light'] .container :global(.button) {
+  box-shadow: 
+    0 0 4px rgba(255, 255, 255, 0.8),
+    0 0 8px rgba(255, 255, 255, 0.6),
+    0 0 12px rgba(255, 255, 255, 0.4);
+}
+
 /* Dark mode styles */
 [data-theme='dark'] .container {
   color: #fff;
+}
+
+[data-theme='dark'] .container h1,
+[data-theme='dark'] .container > p {
+  text-shadow: 
+    0 0 4px rgba(0, 0, 0, 0.9),
+    0 0 8px rgba(0, 0, 0, 0.8),
+    0 0 12px rgba(0, 0, 0, 0.7),
+    0 0 16px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme='dark'] .container :global(.button) {
+  box-shadow: 
+    0 0 4px rgba(0, 0, 0, 0.8),
+    0 0 8px rgba(0, 0, 0, 0.6),
+    0 0 12px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 996px) {

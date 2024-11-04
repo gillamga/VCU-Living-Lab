@@ -7,7 +7,6 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import p5 from 'p5';
 import { useColorMode } from '@docusaurus/theme-common';
-
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -159,9 +158,13 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+          <a 
+            className="button button--secondary button--lg" 
+            href="/Project Description.pdf" 
+            download
+          >
+            Download Project Description
+          </a>
         </div>
       </div>
     </header>

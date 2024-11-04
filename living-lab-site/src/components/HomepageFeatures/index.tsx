@@ -9,32 +9,39 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Research and Innovation',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        The LL provides students and researchers with access to state-of-the-art
+        technology and an environment that facilitates learning, idea-sharing, 
+        and the development of new technologies for health field applications. 
+      </>
+    ),
+  },  
+  {
+    title: 'Workshops, Seminars, Internships',
+    description: (
+      <>
+        The lab will host talks from industry specialists and workshops where students
+        will be encouraged to hone their professional skills. It will also offer 
+        semester-long internships for students interested in health systems development, 
+        allowing them to develop a product for a client in tandem with their studies 
+        and gain hands-on system development expereince.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Curriculum Integration',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Two new courses on health systems engineering will be introduced to 
+        the VCU curriculum, with focuses on the role of machine learning in
+        the future of the field, and how to produce, maintain, and expand
+        upon engineered health system tools.
       </>
     ),
   },
-  {
-    title: 'Powered by React',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+
 ];
 
 function Feature({ title, description }: FeatureItem) {
