@@ -17,6 +17,7 @@ This website is built using:
 - TypeScript
 - React
 - CSS Modules
+- P5.js
 
 ## Getting Started
 
