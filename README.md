@@ -64,6 +64,8 @@ living-lab-site/
 
 ## Available Scripts
 
+Make sure you're in the living-lab-site directory
+
 - `npm start` - Starts the development server
 - `npm run build` - Builds the website for production
 - `npm run serve` - Serves the built website locally
