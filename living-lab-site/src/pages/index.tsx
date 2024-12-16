@@ -7,7 +7,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import p5 from 'p5';
 import { useColorMode } from '@docusaurus/theme-common';
-import styles from './index.module.css';
+import styles from './modules/index.module.css';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();

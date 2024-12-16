@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'VCU Living Lab',
-  tagline: 'A Living Lab of Intelligent Systems for Health',
+  title: 'AIHealth-LL',
+  tagline: 'A Living Lab on the Development of Artificial Intelligence-enabled Systems for Health',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
