@@ -17,10 +17,10 @@ jobs:
           node-version: 18 # Use Node.js 18 here
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Build site
-        run: npm run build
+        run: |
+          cd living-lab-site
+          npm install
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
