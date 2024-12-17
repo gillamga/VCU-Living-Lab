@@ -1,35 +1,44 @@
+name: Deploy to GitHub Pages
+
 on:
   push:
     branches:
-      - Docusaurus # Change this to your default branch if it's different
+      - Docusaurus
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      
+      - uses: actions/setup-node@v3
         with:
-          node-version: 18 # Use Node.js 18 here
+          node-version: 18
+          cache: npm
+          cache-dependency-path: './living-lab-site/package-lock.json'
 
       - name: Install dependencies
         run: |
           cd living-lab-site
-          npm install
+          npm ci
 
       - name: Build website
         run: |
           cd living-lab-site
           npm run build
 
+      # Popular action to deploy to GitHub Pages:
+      # Docs: https://github.com/peaceiris/actions-gh-pages
       - name: Deploy to GitHub Pages
-        run: |
-          cd living-lab-site
-          npm run deploy
-        env:
-          GIT_USER: github-actions
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Build output to publish to the `gh-pages` branch:
+          publish_dir: ./living-lab-site/build
+          # Assign commit authorship to the official GH-Actions bot
+          user_name: 'github-actions[bot]'
+          user_email: '41898282+github-actions[bot]@users.noreply.github.com'
