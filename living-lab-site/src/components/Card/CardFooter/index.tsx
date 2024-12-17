@@ -1,5 +1,7 @@
 import React, { CSSProperties, ReactNode } from 'react';
 import clsx from 'clsx';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 interface CardFooterProps {
   className?: string;
   style?: CSSProperties;
@@ -16,6 +18,7 @@ interface CardFooterProps {
   websiteUrl?: string;
   email?: string;
 }
+
 const CardFooter: React.FC<CardFooterProps> = ({
   className,
   style,
@@ -40,6 +43,12 @@ const CardFooter: React.FC<CardFooterProps> = ({
   const textBreak = breakWord ? 'text--break' : '';
   const textTruncate = truncate ? 'text--truncate' : '';
   const textWeight = weight ? `text--${weight}` : '';
+
+  // Use useBaseUrl to properly resolve static asset URLs
+  const linkedinIcon = useBaseUrl('img/CardIcons/linkedin-svgrepo-com.svg');
+  const websiteIcon = useBaseUrl('img/CardIcons/website-click-svgrepo-com.svg');
+  const emailIcon = useBaseUrl('img/CardIcons/email-1573-svgrepo-com.svg');
+
   return (
     <div
       className={clsx(
@@ -62,7 +71,7 @@ const CardFooter: React.FC<CardFooterProps> = ({
         {linkedinUrl && (
           <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
             <img
-              src="/img/CardIcons/linkedin-svgrepo-com.svg"
+              src={linkedinIcon}
               alt="LinkedIn"
               style={{ width: '24px', height: '24px' }}
             />
@@ -71,7 +80,7 @@ const CardFooter: React.FC<CardFooterProps> = ({
         {websiteUrl && (
           <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
             <img
-              src="/img/CardIcons/website-click-svgrepo-com.svg"
+              src={websiteIcon}
               alt="Website"
               style={{ width: '24px', height: '24px' }}
             />
@@ -80,7 +89,7 @@ const CardFooter: React.FC<CardFooterProps> = ({
         {email && (
           <a href={`mailto:${email}`}>
             <img
-              src="/img/CardIcons/email-1573-svgrepo-com.svg"
+              src={emailIcon}
               alt="Email"
               style={{ width: '24px', height: '24px' }}
             />
@@ -90,4 +99,5 @@ const CardFooter: React.FC<CardFooterProps> = ({
     </div>
   );
 };
+
 export default CardFooter;
