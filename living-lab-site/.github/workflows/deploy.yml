@@ -26,6 +26,7 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           cd living-lab-site
+          cd src
           npm run deploy
         env:
           GIT_USER: github-actions
