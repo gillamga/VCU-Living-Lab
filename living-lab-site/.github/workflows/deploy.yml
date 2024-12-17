@@ -19,11 +19,14 @@ jobs:
       - name: Install dependencies
         run: |
           cd living-lab-site
+          cd src
           npm install
           npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # Change this if your build output directory is different
+        run: |
+          cd living-lab-site
+          npm run deploy
+        env:
+          GIT_USER: github-actions
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
