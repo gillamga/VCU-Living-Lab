@@ -3,7 +3,7 @@ import clsx from 'clsx';
 interface CardFooterProps {
   className?: string;
   style?: CSSProperties;
-  children: ReactNode;
+  children?: ReactNode;
   textAlign?: string;
   variant?: string;
   italic?: boolean;
@@ -12,6 +12,9 @@ interface CardFooterProps {
   breakWord?: boolean;
   truncate?: boolean;
   weight?: string;
+  linkedinUrl?: string;
+  websiteUrl?: string;
+  email?: string;
 }
 const CardFooter: React.FC<CardFooterProps> = ({
   className,
@@ -25,6 +28,9 @@ const CardFooter: React.FC<CardFooterProps> = ({
   breakWord = false,
   truncate = false,
   weight,
+  linkedinUrl,
+  websiteUrl,
+  email,
 }) => {
   const text = textAlign ? `text--${textAlign}` : '';
   const textColor = variant ? `text--${variant}` : '';
@@ -51,6 +57,36 @@ const CardFooter: React.FC<CardFooterProps> = ({
       style={style}
     >
       {children}
+      {/* Icon container */}
+      <div className="card__footer-icons" style={{ display: 'flex', gap: '0.5rem', marginLeft: 'auto' }}>
+        {linkedinUrl && (
+          <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+            <img
+              src="/img/CardIcons/linkedin-svgrepo-com.svg"
+              alt="LinkedIn"
+              style={{ width: '24px', height: '24px' }}
+            />
+          </a>
+        )}
+        {websiteUrl && (
+          <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
+            <img
+              src="/img/CardIcons/website-click-svgrepo-com.svg"
+              alt="Website"
+              style={{ width: '24px', height: '24px' }}
+            />
+          </a>
+        )}
+        {email && (
+          <a href={`mailto:${email}`}>
+            <img
+              src="/img/CardIcons/email-1573-svgrepo-com.svg"
+              alt="Email"
+              style={{ width: '24px', height: '24px' }}
+            />
+          </a>
+        )}
+      </div>
     </div>
   );
 };

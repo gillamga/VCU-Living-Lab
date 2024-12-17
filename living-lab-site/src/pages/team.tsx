@@ -1,20 +1,19 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import clsx from 'clsx';
 import Card from '../components/Card';
-import CardHeader from '../components/Card/CardHeader';
 import CardImage from '../components/Card/CardImage';
 import CardBody from '../components/Card/CardBody';
 import CardFooter from '../components/Card/CardFooter';
 
-export default function Team(): JSX.Element {
+export default function Governance(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title="Team"
-      description="VCU Living Lab Team Members">
+      description="VCU Living Lab Team">
       <main className="container margin-vert--lg">
+        <h1>Our Team</h1>
         {/* Program Leadership */}
         <div className="row margin-bottom--5px">
           <div className="col col--12">
@@ -31,12 +30,12 @@ export default function Team(): JSX.Element {
               />
               <CardBody>
                 <h3>Dr. Rodrigo Spinola</h3>
-                <p>Professor and Researcher</p>
+                <p>Associate professor at VCU, head of technical debt research team</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl='https://www.linkedin.com/in/rodrigoospinola/' 
+                email='spinolaro@vcu.edu'
+                websiteUrl='https://www.rodrigospinola.com/'>
               </CardFooter>
             </Card>
           </div>
@@ -50,12 +49,10 @@ export default function Team(): JSX.Element {
               />
               <CardBody>
                 <h3>Dr. Kostadin Damevski</h3>
-                <p>Professor and Researcher</p>
+                <p>Associate professor at VCU</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl='https://www.linkedin.com/in/kostadin-damevski-b3414/'>
               </CardFooter>
             </Card>
           </div>
@@ -77,12 +74,10 @@ export default function Team(): JSX.Element {
               />
               <CardBody>
                 <h3>Dr. Irfan Ahmed</h3>
-                <p>Professor and Researcher</p>
+                <p>Associate professor of cybersecurity at VCU</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl='https://www.linkedin.com/in/irfan-ahmed-5142338/'>
               </CardFooter>
             </Card>
           </div>
@@ -96,12 +91,10 @@ export default function Team(): JSX.Element {
               />
               <CardBody>
                 <h3>Dr. John Leonard</h3>
-                <p>Professor and Researcher</p>
+                <p>Professor of computer science at VCU</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl='https://www.linkedin.com/in/johndleonard/'>
               </CardFooter>
             </Card>
           </div>
@@ -115,12 +108,10 @@ export default function Team(): JSX.Element {
               />
               <CardBody>
                 <h3>Dr. Gary Tepper</h3>
-                <p>Professor and Researcher</p>
+                <p>Senior associate dean for academic and faculty affairs at the VCU college of engineering</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl='https://www.linkedin.com/in/gary-tepper-b559b11a1/'>
               </CardFooter>
             </Card>
           </div>
@@ -142,12 +133,10 @@ export default function Team(): JSX.Element {
                 />
                 <CardBody>
                   <h3>Dr. Barbara Boyan</h3>
-                  <p>Professor and Researcher</p>
+                  <p>Executive director of the VCU institute for engineering and medicine</p>
                 </CardBody>
-                <CardFooter>
-                  <div className="button-group button-group--block">
-                    <a className="button button--secondary" href="#contact">Contact</a>
-                  </div>
+                <CardFooter
+                    linkedinUrl='https://www.linkedin.com/in/barbara-d-boyan-91854116/'>
                 </CardFooter>
               </Card>
           </div>
@@ -161,7 +150,7 @@ export default function Team(): JSX.Element {
                 />
                 <CardBody>
                   <h3>Dr. Daniel Falcao</h3>
-                  <p>Professor and Researcher</p>
+                  <p>No info</p>
                 </CardBody>
                 <CardFooter>
                   <div className="button-group button-group--block">
@@ -180,12 +169,11 @@ export default function Team(): JSX.Element {
                 />
                 <CardBody>
                   <h3>Dr. Guilherme Campos</h3>
-                  <p>Professor and Researcher</p>
+                  <p>Paul J. Nutter professor of surgery, chairman of the bariatric and 
+                  gastrointestinal surgery division at VCU</p>
                 </CardBody>
-                <CardFooter>
-                  <div className="button-group button-group--block">
-                    <a className="button button--secondary" href="#contact">Contact</a>
-                  </div>
+                <CardFooter
+                    linkedinUrl='https://www.linkedin.com/in/guilherme-m-campos-md-phd-facs-fasmbs-95627a55/'>
                 </CardFooter>
               </Card>
           </div>
@@ -199,12 +187,10 @@ export default function Team(): JSX.Element {
                 />
                 <CardBody>
                   <h3>Dr. Taylor Haight</h3>
-                  <p>Professor and Researcher</p>
+                  <p>Stroke neurologist at VCU health</p>
                 </CardBody>
-                <CardFooter>
-                  <div className="button-group button-group--block">
-                    <a className="button button--secondary" href="#contact">Contact</a>
-                  </div>
+                <CardFooter
+                    linkedinUrl='https://www.linkedin.com/in/taylornhaight/'>
                 </CardFooter>
               </Card>
           </div>
@@ -226,12 +212,10 @@ export default function Team(): JSX.Element {
                 />
               <CardBody>
                 <h3>David Ferrufino</h3>
-                <p>Professor and Researcher</p>
+                <p>PhD grad student at VCU</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl='https://www.linkedin.com/in/david-ferrufino-29354a130/'>
               </CardFooter>
             </Card>
           </div>
@@ -245,7 +229,7 @@ export default function Team(): JSX.Element {
                 />
               <CardBody>
                 <h3>Rodrigo Sotolani</h3>
-                <p>Professor and Researcher</p>
+                <p>No info</p>
               </CardBody>
               <CardFooter>
                 <div className="button-group button-group--block">
@@ -264,12 +248,10 @@ export default function Team(): JSX.Element {
                 />
               <CardBody>
                 <h3>Miles Popiela</h3>
-                <p>Professor and Researcher</p>
+                <p>Masters student at VCU</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl="https://www.linkedin.com/in/milespopiela/">
               </CardFooter>
             </Card>
           </div>
@@ -283,12 +265,10 @@ export default function Team(): JSX.Element {
                 />
               <CardBody>
                 <h3>Adam Hussein</h3>
-                <p>Professor and Researcher</p>
+                <p>Undergraduate physics major/computer science and math minnor at VCU</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl="https://www.linkedin.com/in/adam-hussein-671472264/">
               </CardFooter>
             </Card>
           </div>
@@ -302,12 +282,12 @@ export default function Team(): JSX.Element {
                 />
               <CardBody>
                 <h3>Grace Gillam</h3>
-                <p>Professor and Researcher</p>
+                <p>Undergraduate computer science major at VCU</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl="https://www.linkedin.com/in/grace-gillam/"
+                websiteUrl='https://gracegillam.com/Pages/GraceHomepage'
+                email='gillamga@vcu.edu'>
               </CardFooter>
             </Card>
           </div>
@@ -321,7 +301,7 @@ export default function Team(): JSX.Element {
                 />
               <CardBody>
                 <h3>Lauren Viado</h3>
-                <p>Professor and Researcher</p>
+                <p>Undergraduate computer science major at VCU</p>
               </CardBody>
               <CardFooter>
                 <div className="button-group button-group--block">
@@ -340,12 +320,10 @@ export default function Team(): JSX.Element {
                 />
               <CardBody>
                 <h3>Samuel Sarzaba</h3>
-                <p>Professor and Researcher</p>
+                <p>Undergraduate computer science major at VCU</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl="https://www.linkedin.com/in/samuel-sarzaba/">
               </CardFooter>
             </Card>
           </div>
