@@ -144,18 +144,16 @@ export default function Governance(): JSX.Element {
           <div className="col col--3">
             <Card className="card-demo margin-bottom--md" shadow="md">
                 <CardImage
-                  cardImageUrl=""
+                  cardImageUrl="/img/TeamCardImages/Falcao.jpg"
                   alt="Dr. Daniel Falcao"
                   title="Dr. Daniel Falcao"
                 />
                 <CardBody>
                   <h3>Dr. Daniel Falcao</h3>
-                  <p>No info</p>
+                  <p>Associate professor and interim chief of the division of vascular neurology at VCU health</p>
                 </CardBody>
-                <CardFooter>
-                  <div className="button-group button-group--block">
-                    <a className="button button--secondary" href="#contact">Contact</a>
-                  </div>
+                <CardFooter
+                  email='daniel.falcao@vcuhealth.org'>
                 </CardFooter>
               </Card>
           </div>
@@ -223,18 +221,16 @@ export default function Governance(): JSX.Element {
           <div className="col col--3">
             <Card className="card-demo margin-bottom--md" shadow="md">
               <CardImage
-                cardImageUrl=""
+                cardImageUrl="/img/TeamCardImages/Sotolani.jpg"
                 alt="Rodrigo Sotolani"
                 title="Rodrigo Sotolani"
                 />
               <CardBody>
                 <h3>Rodrigo Sotolani</h3>
-                <p>No info</p>
+                <p>Full stack web developer</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl='https://www.linkedin.com/in/rsotolani/'>
               </CardFooter>
             </Card>
           </div>
@@ -295,7 +291,7 @@ export default function Governance(): JSX.Element {
           <div className="col col--3">
             <Card className="card-demo margin-bottom--md" shadow="md">
               <CardImage
-                cardImageUrl=""
+                cardImageUrl="/img/TeamCardImages/Lauren.jpg"
                 alt="Lauren Viado"
                 title="Lauren Viado"
                 />
@@ -303,10 +299,8 @@ export default function Governance(): JSX.Element {
                 <h3>Lauren Viado</h3>
                 <p>Undergraduate computer science major at VCU</p>
               </CardBody>
-              <CardFooter>
-                <div className="button-group button-group--block">
-                  <a className="button button--secondary" href="#contact">Contact</a>
-                </div>
+              <CardFooter
+                linkedinUrl='https://www.linkedin.com/in/lauren-viado/'>
               </CardFooter>
             </Card>
           </div>
