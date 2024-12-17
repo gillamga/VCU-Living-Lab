@@ -19,14 +19,16 @@ jobs:
       - name: Install dependencies
         run: |
           cd living-lab-site
-          cd src
           npm install
+
+      - name: Build website
+        run: |
+          cd living-lab-site
           npm run build
 
       - name: Deploy to GitHub Pages
         run: |
           cd living-lab-site
-          cd src
           npm run deploy
         env:
           GIT_USER: github-actions
