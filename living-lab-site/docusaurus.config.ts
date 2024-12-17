@@ -11,7 +11,7 @@ const config: Config = {
   url: 'https://gillamga.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/VCU-Living-Lab/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'gillamga', // Usually your GitHub org/user name.
