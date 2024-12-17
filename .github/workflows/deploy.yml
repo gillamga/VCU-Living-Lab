@@ -30,6 +30,12 @@ jobs:
         run: |
           cd living-lab-site
           npm run build
+          # Create .nojekyll file to prevent GitHub Pages from processing with Jekyll
+          touch build/.nojekyll
+
+      # Configure GitHub Pages
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v3
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages
@@ -42,3 +48,5 @@ jobs:
           # Assign commit authorship to the official GH-Actions bot
           user_name: 'github-actions[bot]'
           user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+          # Keep the .nojekyll file
+          keep_files: true
