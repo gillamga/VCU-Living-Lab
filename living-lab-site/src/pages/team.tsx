@@ -29,7 +29,9 @@ export default function Governance(): JSX.Element {
                 title="Dr. Rodrigo Spinola"
               />
               <CardBody>
-                <h3>Dr. Rodrigo Spinola</h3>
+                <h3>Dr. Rodrigo Spinola  
+                  <span className="badge badge--primary">Director</span>
+                </h3>
                 <p>Associate professor at VCU, head of technical debt research team</p>
               </CardBody>
               <CardFooter
@@ -48,10 +50,13 @@ export default function Governance(): JSX.Element {
                 title="Dr. Kostadin Damevski"
               />
               <CardBody>
-                <h3>Dr. Kostadin Damevski</h3>
+                <h3>Dr. Kostadin Damevski
+                  <span className="badge badge--primary">Program Coordinator</span>
+                </h3>
                 <p>Associate professor at VCU</p>
               </CardBody>
               <CardFooter
+                websiteUrl="https://damevski.github.io/"
                 linkedinUrl='https://www.linkedin.com/in/kostadin-damevski-b3414/'>
               </CardFooter>
             </Card>
@@ -65,7 +70,10 @@ export default function Governance(): JSX.Element {
           </div>
         </div>
         <div className="row">
-          <div className="col col--3">
+
+          {/* uncomment the below block when irfan gets involved */}
+
+          {/* <div className="col col--3">
           <Card className="card-demo margin-bottom--md" shadow="md">
               <CardImage
                 cardImageUrl="/img/TeamCardImages/Ahmed.jpg"
@@ -80,7 +88,7 @@ export default function Governance(): JSX.Element {
                 linkedinUrl='https://www.linkedin.com/in/irfan-ahmed-5142338/'>
               </CardFooter>
             </Card>
-          </div>
+          </div> */}
 
           <div className="col col--3">
           <Card className="card-demo margin-bottom--md" shadow="md">
@@ -95,23 +103,6 @@ export default function Governance(): JSX.Element {
               </CardBody>
               <CardFooter
                 linkedinUrl='https://www.linkedin.com/in/johndleonard/'>
-              </CardFooter>
-            </Card>
-          </div>
-
-          <div className="col col--3">
-          <Card className="card-demo margin-bottom--md" shadow="md">
-              <CardImage
-                cardImageUrl="/img/TeamCardImages/Tepper.jpg"
-                alt="Dr. Gary Tepper"
-                title="Dr. Gary Tepper"
-              />
-              <CardBody>
-                <h3>Dr. Gary Tepper</h3>
-                <p>Senior associate dean for academic and faculty affairs at the VCU college of engineering</p>
-              </CardBody>
-              <CardFooter
-                linkedinUrl='https://www.linkedin.com/in/gary-tepper-b559b11a1/'>
               </CardFooter>
             </Card>
           </div>
@@ -227,7 +218,7 @@ export default function Governance(): JSX.Element {
                 />
               <CardBody>
                 <h3>Rodrigo Sotolani</h3>
-                <p>Full stack web developer</p>
+                <p>PhD grad student at VCU</p>
               </CardBody>
               <CardFooter
                 linkedinUrl='https://www.linkedin.com/in/rsotolani/'>

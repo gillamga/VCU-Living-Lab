@@ -24,15 +24,6 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <a 
-            className="button button--secondary button--lg" 
-            href="/Project Description.pdf" 
-            download
-          >
-            Download Project Description
-          </a>
-        </div>
       </div>
     </header>
   );

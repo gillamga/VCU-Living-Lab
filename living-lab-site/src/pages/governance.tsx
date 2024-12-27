@@ -16,7 +16,7 @@ export default function Governance(): JSX.Element {
         <h1>Governance</h1>
         <div className="row margin-bottom--5px">
           <div className="col col--12">
-            <h2 className="text--left">Program Leadership</h2>
+            <h2 className="text--left">Program Committee</h2>
           </div>
         </div>
         <div className="row">
@@ -68,6 +68,23 @@ export default function Governance(): JSX.Element {
               </CardBody>
               <CardFooter
                 linkedinUrl='https://www.linkedin.com/in/paula-ogston-nobile-phd-2b328931/'>
+              </CardFooter>
+            </Card>
+          </div>
+
+          <div className="col col--3">
+          <Card className="card-demo margin-bottom--md" shadow="md">
+              <CardImage
+                cardImageUrl="/img/TeamCardImages/Tepper.jpg"
+                alt="Dr. Gary Tepper"
+                title="Dr. Gary Tepper"
+              />
+              <CardBody>
+                <h3>Dr. Gary Tepper</h3>
+                <p>Senior associate dean for academic and faculty affairs at the VCU college of engineering</p>
+              </CardBody>
+              <CardFooter
+                linkedinUrl='https://www.linkedin.com/in/gary-tepper-b559b11a1/'>
               </CardFooter>
             </Card>
           </div>

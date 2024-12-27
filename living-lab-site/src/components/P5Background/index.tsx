@@ -99,7 +99,7 @@ export default function P5Background() {
       };
 
       p.draw = () => {
-        p.background(isDarkTheme ? 0 : 255, 3);
+        p.background(0, 3);
         
         let yoff = 0;
         for (let y = 0; y < rows; y++) {
@@ -140,5 +140,5 @@ export default function P5Background() {
     };
   }, [isDarkTheme]);
 
-  return <div ref={canvasRef} style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 0 }} />;
+  return <div ref={canvasRef} style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 0, }} />;
 }

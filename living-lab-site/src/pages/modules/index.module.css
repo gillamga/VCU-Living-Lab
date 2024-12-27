@@ -34,10 +34,10 @@
 
 /* Light mode styles */
 [data-theme='light'] .container {
-  color: #000;
+  color: #fff;
 }
 
-[data-theme='light'] .container h1,
+/* [data-theme='light'] .container h1,
 [data-theme='light'] .container > p {
   text-shadow: 
     0 0 4px rgba(255, 255, 255, 0.9),
@@ -52,15 +52,15 @@
     0 0 4px rgba(255, 255, 255, 0.8),
     0 0 8px rgba(255, 255, 255, 0.6),
     0 0 12px rgba(255, 255, 255, 0.4);
-}
+} */
 
 /* Dark mode styles */
 [data-theme='dark'] .container {
   color: #fff;
 }
 
-[data-theme='dark'] .container h1,
-[data-theme='dark'] .container > p {
+.container h1,
+.container > p {
   text-shadow: 
     0 0 4px rgba(0, 0, 0, 0.9),
     0 0 8px rgba(0, 0, 0, 0.8),
