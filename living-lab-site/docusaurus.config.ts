@@ -76,7 +76,6 @@ const config: Config = {
         },
         { to: '/program', label: 'Program', position: 'left' },
         { to: '/team', label: 'Team', position: 'left' },
-        { to: '/events', label: 'Events', position: 'left' },
         { to: '/governance', label: 'Governance', position: 'left' },
         { to: '/partners', label: 'Partners', position: 'left' },
         { to: '/apply', label: 'Apply', position: 'left' },
@@ -84,48 +83,72 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
+      //default links left for future styling reference
+
+      // links: [
+      //   {
+      //     title: 'Docs',
+      //     items: [
+      //       {
+      //         label: 'Tutorial',
+      //         to: '/docs/intro',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'Community',
+      //     items: [
+      //       {
+      //         label: 'Stack Overflow',
+      //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+      //       },
+      //       {
+      //         label: 'Discord',
+      //         href: 'https://discordapp.com/invite/docusaurus',
+      //       },
+      //       {
+      //         label: 'Twitter',
+      //         href: 'https://twitter.com/docusaurus',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'More',
+      //     items: [
+      //       {
+      //         label: 'Blog',
+      //         to: '/blog',
+      //       },
+      //       {
+      //         label: 'GitHub',
+      //         href: 'https://github.com/gillamga/VCU-Living-Lab',
+      //       },
+      //     ],
+      //   },
+      // ],
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/gillamga/VCU-Living-Lab',
-            },
-          ],
+          html: `
+            <div style="text-align: center;">
+              <a href="https://www.vcuhealth.org/" style="display: inline-block; margin-right: 20px;">
+                <img 
+                  src="/img/TeamCardImages/vculogo.jpg" 
+                  alt="VCU Logo" 
+                  style="width: 300px; height: auto;"
+                />
+              </a>
+              <a href="https://www.nsf.gov/" style="display: inline-block;">
+                <img 
+                  src="/img/TeamCardImages/nsf.jpg" 
+                  alt="NSF Logo" 
+                  style="width: 300px; height: auto;"
+                />
+              </a>
+            </div>
+          `,
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Virginia Commonwealth University, Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} AIHealth`,
     },
     prism: {
       theme: prismThemes.gruvboxMaterialLight,

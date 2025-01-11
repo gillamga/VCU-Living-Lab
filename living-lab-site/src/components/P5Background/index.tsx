@@ -20,6 +20,18 @@ export default function P5Background() {
       let angleOffset = 30;
       const blueShades = ['#012626', '#04BFAD', '#038C7F', '#027368', '#01403A'];
 
+      p.setup = () => {
+        const canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+        p.pixelDensity(1); // Normalize pixel density
+        cols = Math.floor(p.width / scl);
+        rows = Math.floor(p.height / scl);
+        flowField = new Array(cols * rows);
+      
+        for (let i = 0; i < particleCount; i++) {
+          particles.push(new Particle());
+        }
+      };
+
       class Particle {
         pos: p5.Vector;
         vel: p5.Vector;
