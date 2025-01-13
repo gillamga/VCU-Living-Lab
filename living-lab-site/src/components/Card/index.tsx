@@ -1,4 +1,4 @@
-import React, { CSSProperties, ReactNode } from 'react'; // Import types for props
+import React, { CSSProperties, ReactNode, useEffect, useRef } from 'react'; // Import types for props
 import clsx from 'clsx'; // clsx helps manage conditional className names in a clean and concise manner.
 // Define an interface for the component props
 interface CardProps {
@@ -14,6 +14,54 @@ const Card: React.FC<CardProps> = ({
   children,
   shadow = 'md',
 }) => {
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  const adjustCardHeights = () => {
+    const cards = document.querySelectorAll('.card');
+    const images = document.querySelectorAll('.card img');
+    let maxHeight = 0;
+
+    const recalculateHeights = () => {
+      cards.forEach((card) => {
+        (card as HTMLElement).style.height = 'auto';
+      });
+  
+      cards.forEach((card) => {
+        const cardHeight = (card as HTMLElement).offsetHeight;
+        if (cardHeight > maxHeight) {
+          maxHeight = cardHeight;
+        }
+      });
+      cards.forEach((card) => {
+        (card as HTMLElement).style.height = `${maxHeight}px`;
+      });
+    };
+  
+    const promises = Array.from(images).map(
+      (img) =>
+        new Promise<void>((resolve) => {
+          if ((img as HTMLImageElement).complete) {
+            resolve();
+          } else {
+            (img as HTMLImageElement).addEventListener('load', () => resolve());
+            (img as HTMLImageElement).addEventListener('error', () => resolve());
+          }
+        })
+    );
+  
+    Promise.all(promises).then(recalculateHeights);
+  };
+  
+  useEffect(() => {
+    adjustCardHeights();
+    window.addEventListener('resize', adjustCardHeights);
+  
+    return () => {
+      window.removeEventListener('resize', adjustCardHeights);
+    };
+  }, []);
+
+
   const cardShadow = shadow ? `item shadow--${shadow}` : '';
   return (
     <div className={clsx('card', className, cardShadow)} style={style}>
