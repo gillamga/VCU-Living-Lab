@@ -16,16 +16,16 @@ export default function Partners(): JSX.Element {
         </div>
         <div style={{ display: 'flex', justifyContent: 'left', flexWrap: 'wrap', gap: '2rem', marginBottom: '2rem' }}>
           <a href="https://www.vcuhealth.org/" style={{ display: 'block' }}>
-            <img 
-              src="/img/TeamCardImages/vculogo.jpg" 
-              alt="VCU Logo" 
+            <img
+              src="/img/VCU/VCU_H_Gold lettering - 4C.png"
+              alt="VCU Logo"
               style={{ width: '250px', height: 'auto' }}
             />
           </a>
           <a href="https://caretakermedical.net/" style={{ display: 'block' }}>
-            <img 
-              src="/img/TeamCardImages/caretaker.jpg" 
-              alt="Caretaker Medical Logo" 
+            <img
+              src="/img/TeamCardImages/caretaker.jpg"
+              alt="Caretaker Medical Logo"
               style={{ width: '250px', height: 'auto' }}
             />
           </a>
@@ -38,9 +38,9 @@ export default function Partners(): JSX.Element {
         </div>
         <div style={{ display: 'flex', justifyContent: 'left', flexWrap: 'wrap', gap: '2rem' }}>
           <a href="https://www.nsf.gov/" style={{ display: 'block' }}>
-            <img 
-              src="/img/TeamCardImages/nsf.jpg" 
-              alt="NSF Logo" 
+            <img
+              src="/img/VCU/1019px-NSF_logo.png"
+              alt="NSF Logo"
               style={{ width: '250px', height: 'auto' }}
             />
           </a>

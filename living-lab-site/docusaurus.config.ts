@@ -130,20 +130,22 @@ const config: Config = {
         {
           html: `
             <div style="text-align: center;">
-              <a href="https://www.vcuhealth.org/" style="display: inline-block; margin-right: 20px;">
-                <img 
-                  src="/img/TeamCardImages/vculogo.jpg" 
-                  alt="VCU Logo" 
-                  style="width: 300px; height: auto;"
-                />
-              </a>
-              <a href="https://www.nsf.gov/" style="display: inline-block;">
-                <img 
-                  src="/img/TeamCardImages/nsf.jpg" 
-                  alt="NSF Logo" 
-                  style="width: 300px; height: auto;"
-                />
-              </a>
+              <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+                <a href="https://www.vcuhealth.org/" style="display: inline-block;">
+                  <img
+                    src="/img/VCU/VCU_H_Gold lettering - 4C.png"
+                    alt="VCU Logo"
+                    style="width: 150px; height: auto;"
+                  />
+                </a>
+                <a href="https://www.nsf.gov/" style="display: inline-block;">
+                  <img
+                    src="/img/VCU/1019px-NSF_logo.png"
+                    alt="NSF Logo"
+                    style="width: 130px; height: auto;"
+                  />
+                </a>
+              </div>
             </div>
           `,
         },
