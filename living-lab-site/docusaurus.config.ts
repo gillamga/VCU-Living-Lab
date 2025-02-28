@@ -35,8 +35,8 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/gillamga/VCU-Living-Lab/tree/main/',
+          // editUrl:
+          //   'https://github.com/gillamga/VCU-Living-Lab/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -74,7 +74,7 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
-        { to: '/program', label: 'Program', position: 'left' },
+        { to: 'docs/program', label: 'Program', position: 'left' },
         { to: '/team', label: 'Team', position: 'left' },
         { to: '/governance', label: 'Governance', position: 'left' },
         { to: '/partners', label: 'Partners', position: 'left' },
